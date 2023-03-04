@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Expenses from './component/Expenses/Expenses';
 
+import NewExpense from './component/NewExpense/NewExpense'
 const App = () => {
   const expenses = [
     {
@@ -26,7 +27,7 @@ const App = () => {
   ];
   return (
     <div className="App">
-      <h1>My React App!</h1>
+      <NewExpense />
       <Expenses expenses={expenses}></Expenses>
     </div>
   );
